@@ -34,7 +34,7 @@ type workerChan struct {
 
 var workerpool WorkerPool
 
-func init() {
+func Init() {
 	workerpool = WorkerPool{
 		MaxWorkersCount:       256 * 1024,
 		MaxIdleWorkerDuration: 10 * time.Second,
