@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"sync"
 
-	pool "github.com/hnlq715/goroutine-pool"
+	pool "github.com/weint/goroutine-pool"
 )
 
 func main() {
+	pool.Init()
 	pool.Start()
 	defer pool.Stop()
 
